@@ -17,12 +17,12 @@ export default function Navigation() {
             <img src="/attached_assets/image_1752016256180.png" alt="Autumnwood Designs" className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-warm-orange transition-colors">About</button>
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-warm-orange transition-colors">Services</button>
-            <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-warm-orange transition-colors">Portfolio</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-warm-orange transition-colors">Contact</button>
+            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-warm-blue transition-colors">About</button>
+            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-warm-blue transition-colors">Services</button>
+            <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-warm-blue transition-colors">Portfolio</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-warm-blue transition-colors">Contact</button>
           </div>
-          <button onClick={() => scrollToSection('contact')} className="bg-warm-orange text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+          <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
             Get Quote
           </button>
         </div>

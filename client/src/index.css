@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(16, 100%, 60%);
+  --primary: hsl(200, 70%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -26,11 +26,11 @@
   
   /* Custom Autumnwood Colors */
   --charcoal: hsl(0, 0%, 10%);
-  --warm-orange: hsl(16, 100%, 60%);
+  --warm-blue: hsl(200, 70%, 65%);
   --off-white: hsl(0, 0%, 98%);
-  --orange-50: hsl(16, 100%, 97%);
-  --orange-100: hsl(16, 100%, 94%);
-  --orange-600: hsl(16, 100%, 55%);
+  --blue-50: hsl(200, 70%, 97%);
+  --blue-100: hsl(200, 70%, 94%);
+  --blue-600: hsl(200, 70%, 55%);
 }
 
 .dark {
@@ -72,12 +72,12 @@
     color: var(--charcoal);
   }
   
-  .text-warm-orange {
-    color: var(--warm-orange);
+  .text-warm-blue {
+    color: var(--warm-blue);
   }
   
-  .bg-warm-orange {
-    background-color: var(--warm-orange);
+  .bg-warm-blue {
+    background-color: var(--warm-blue);
   }
   
   .bg-charcoal {
@@ -88,40 +88,40 @@
     background-color: var(--off-white);
   }
   
-  .border-warm-orange {
-    border-color: var(--warm-orange);
+  .border-warm-blue {
+    border-color: var(--warm-blue);
   }
   
-  .hover\:bg-orange-600:hover {
-    background-color: var(--orange-600);
+  .hover\:bg-blue-600:hover {
+    background-color: var(--blue-600);
   }
   
-  .hover\:text-warm-orange:hover {
-    color: var(--warm-orange);
+  .hover\:text-warm-blue:hover {
+    color: var(--warm-blue);
   }
   
-  .from-orange-50 {
-    --tw-gradient-from: var(--orange-50);
+  .from-blue-50 {
+    --tw-gradient-from: var(--blue-50);
   }
   
-  .to-orange-50 {
-    --tw-gradient-to: var(--orange-50);
+  .to-blue-50 {
+    --tw-gradient-to: var(--blue-50);
   }
   
-  .bg-warm-orange\/10 {
-    background-color: rgb(255 107 53 / 0.1);
+  .bg-warm-blue\/10 {
+    background-color: rgb(101 174 224 / 0.1);
   }
   
-  .bg-warm-orange\/20 {
-    background-color: rgb(255 107 53 / 0.2);
+  .bg-warm-blue\/20 {
+    background-color: rgb(101 174 224 / 0.2);
   }
   
-  .text-orange-100 {
-    color: var(--orange-100);
+  .text-blue-100 {
+    color: var(--blue-100);
   }
   
-  .text-orange-600 {
-    color: var(--orange-600);
+  .text-blue-600 {
+    color: var(--blue-600);
   }
 }
 

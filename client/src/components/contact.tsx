@@ -80,8 +80,8 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold mb-6 text-charcoal">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-orange/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-warm-orange" />
+                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-warm-blue" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Email</div>
@@ -89,8 +89,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-orange/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-warm-orange" />
+                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-warm-blue" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Response Time</div>
@@ -98,8 +98,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-orange/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-warm-orange" />
+                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-warm-blue" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Location</div>
@@ -109,9 +109,9 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="bg-warm-orange text-white p-8 rounded-2xl">
+            <div className="bg-warm-blue text-white p-8 rounded-2xl">
               <h3 className="text-2xl font-semibold mb-4">Why Choose Autumnwood?</h3>
-              <ul className="space-y-3 text-orange-100">
+              <ul className="space-y-3 text-blue-100">
                 <li className="flex items-center space-x-3">
                   <Check className="w-5 h-5 flex-shrink-0" />
                   <span>Personalized service and attention to detail</span>
@@ -146,7 +146,7 @@ export default function Contact() {
                         <FormControl>
                           <Input 
                             placeholder="John Doe" 
-                            className="focus:ring-warm-orange focus:border-warm-orange"
+                            className="focus:ring-warm-blue focus:border-warm-blue"
                             {...field} 
                           />
                         </FormControl>

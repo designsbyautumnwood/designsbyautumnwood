@@ -83,7 +83,7 @@ export default function Portfolio() {
         >
           <div className="relative max-w-5xl max-h-[90vh] mx-4">
             <button 
-              className="absolute -top-12 right-0 text-white hover:text-warm-orange transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-warm-blue transition-colors"
               onClick={() => setSelectedImage(null)}
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

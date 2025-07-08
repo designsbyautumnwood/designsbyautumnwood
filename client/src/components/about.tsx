@@ -15,15 +15,15 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-warm-orange mb-2">50+</div>
+                <div className="text-3xl font-bold text-warm-blue mb-2">50+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-warm-orange mb-2">3</div>
+                <div className="text-3xl font-bold text-warm-blue mb-2">3</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-warm-orange mb-2">100%</div>
+                <div className="text-3xl font-bold text-warm-blue mb-2">100%</div>
                 <div className="text-gray-600">Client Satisfaction</div>
               </div>
             </div>
@@ -34,9 +34,9 @@ export default function About() {
               alt="Modern design workspace with computer and creative tools" 
               className="rounded-2xl shadow-2xl" 
             />
-            <div className="absolute -bottom-6 -right-6 bg-warm-orange text-white p-6 rounded-xl shadow-lg">
+            <div className="absolute -bottom-6 -right-6 bg-warm-blue text-white p-6 rounded-xl shadow-lg">
               <div className="text-2xl font-bold">Ready to start?</div>
-              <div className="text-orange-100">Let's create something amazing</div>
+              <div className="text-blue-100">Let's create something amazing</div>
             </div>
           </div>
         </div>

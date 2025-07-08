@@ -11,10 +11,10 @@ export default function Hero() {
 
   return (
     <header className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-orange-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50"></div>
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-warm-orange rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-warm-blue rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ export default function Hero() {
           Freelance creative studio specializing in website design, logo creation, and brand naming that brings your vision to life.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button onClick={() => scrollToSection('contact')} className="bg-warm-orange text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-orange-600 transition-all transform hover:scale-105">
+          <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-600 transition-all transform hover:scale-105">
             Get a Quote
           </button>
           <button onClick={() => scrollToSection('portfolio')} className="border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg text-lg font-medium hover:bg-charcoal hover:text-white transition-all">
