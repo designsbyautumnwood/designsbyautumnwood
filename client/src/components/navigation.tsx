@@ -14,7 +14,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <img src="/attached_assets/image_1752016256180.png" alt="Autumnwood Designs" className="h-10 w-auto" />
+            <img src="/logo.png" alt="Autumnwood Designs" className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-warm-blue transition-colors">About</button>

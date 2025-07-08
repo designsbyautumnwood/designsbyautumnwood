@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
-              <img src="/attached_assets/image_1752016256180.png" alt="Autumnwood Designs" className="h-12 w-auto brightness-0 invert" />
+              <img src="/logo.png" alt="Autumnwood Designs" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-300 mb-4">
               Autumnwood Designs - Creating beautiful brands and digital experiences for businesses of all sizes.
