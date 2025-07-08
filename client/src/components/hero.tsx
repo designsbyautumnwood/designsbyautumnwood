@@ -19,7 +19,7 @@ export default function Hero() {
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <div className="animate-bounce-slow mb-12 flex justify-center">
-          <img src="/logo-full.png" alt="Autumnwood Designs" className="h-56 w-auto" />
+          <img src="/logo-full.png" alt="Autumnwood Designs" className="h-56 w-auto max-w-4xl" />
         </div>
         <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Your Brand, Beautifully Built.
