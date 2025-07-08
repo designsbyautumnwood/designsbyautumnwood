@@ -21,11 +21,11 @@ export default function Hero() {
         <div className="animate-bounce-slow mb-0 flex justify-center">
           <img src="/logo-full.png" alt="Autumnwood Designs" className="w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
         </div>
-        <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Your Brand, Beautifully Built.
-        </p>
+        <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Professional Website Design, Logo Creation & Brand Naming Services
+        </h1>
         <p className="text-lg text-gray-500 mb-12 max-w-xl mx-auto">
-          Freelance creative studio specializing in website design, logo creation, and brand naming that brings your vision to life.
+          Get a custom website design, professional logo, and memorable brand name for your business. Free consultation and competitive pricing for small businesses and startups.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-600 transition-all transform hover:scale-105">

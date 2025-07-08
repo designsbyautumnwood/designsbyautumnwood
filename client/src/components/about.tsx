@@ -5,13 +5,13 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
-              About <span className="font-semibold">Autumnwood</span>
+              Professional Web Design & Brand Identity Services
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Autumnwood Designs is a freelance creative studio specializing in website design, logo creation, and brand naming. Whether you're just starting out or need a refresh, we bring your ideas to life with clarity and style.
+              Autumnwood Designs is a professional freelance web design studio offering custom website design, logo creation, and brand naming services for small businesses and startups across the United States.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Based in the United States, we work with small businesses and startups to create memorable brand identities that stand out in today's competitive market.
+              We specialize in creating responsive, SEO-optimized websites, memorable logo designs, and strategic brand naming that helps your business stand out online and attract more customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="text-center sm:text-left">

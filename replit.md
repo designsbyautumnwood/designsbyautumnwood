@@ -7,6 +7,7 @@ This is a full-stack web application for Autumnwood Designs, a freelance creativ
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+SEO is the highest priority - marketing focused website that needs to rank well in search engines.
 
 ## System Architecture
 

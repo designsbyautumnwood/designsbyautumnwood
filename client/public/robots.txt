@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://designsbyautumnwood.com/sitemap.xml
+
+# SEO-optimized robots.txt for Autumnwood Designs
+# Website design, logo creation, and brand naming services

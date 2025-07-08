@@ -42,10 +42,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
-            Our <span className="font-semibold">Services</span>
+            Website Design, Logo & Brand Naming <span className="font-semibold">Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We offer comprehensive design solutions to help your business stand out and succeed in today's competitive market.
+            Professional web design services, custom logo creation, and strategic brand naming for small businesses and startups. Get a free quote today.
           </p>
         </div>
         
