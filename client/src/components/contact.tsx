@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
             
             <div className="bg-warm-blue text-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-semibold mb-4">Why Choose Autumnwood?</h3>
+              <h3 className="text-2xl font-semibold mb-4">Why Choose Autumnwood Designs?</h3>
               <ul className="space-y-3 text-blue-100">
                 <li className="flex items-center space-x-3">
                   <Check className="w-5 h-5 flex-shrink-0" />
