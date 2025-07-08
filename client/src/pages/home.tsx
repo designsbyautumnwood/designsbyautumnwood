@@ -1,0 +1,67 @@
+import { useEffect } from "react";
+import Navigation from "@/components/navigation";
+import Hero from "@/components/hero";
+import About from "@/components/about";
+import Services from "@/components/services";
+import Portfolio from "@/components/portfolio";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import Lightbox from "@/components/lightbox";
+
+export default function Home() {
+  useEffect(() => {
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scrolling for anchor links
+    const handleAnchorClick = (e: Event) => {
+      const target = e.target as HTMLAnchorElement;
+      if (target.href?.includes('#')) {
+        e.preventDefault();
+        const id = target.href.split('#')[1];
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('click', handleAnchorClick);
+    };
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-off-white text-charcoal">
+      <Navigation />
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
+      <Footer />
+      <Lightbox />
+    </div>
+  );
+}
