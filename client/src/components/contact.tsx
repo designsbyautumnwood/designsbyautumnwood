@@ -85,7 +85,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Email</div>
-                    <div className="text-gray-600">info@designsbyautumnwood.com</div>
+                    <div className="text-gray-600">designsbyautumnwood@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">

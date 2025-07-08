@@ -39,8 +39,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="mailto:info@designsbyautumnwood.com" className="hover:text-warm-blue transition-colors">
-                  info@designsbyautumnwood.com
+                <a href="mailto:designsbyautumnwood@gmail.com" className="hover:text-warm-blue transition-colors">
+                  designsbyautumnwood@gmail.com
                 </a>
               </li>
               <li>United States</li>
