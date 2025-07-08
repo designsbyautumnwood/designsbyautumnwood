@@ -35,8 +35,8 @@ export default function Hero() {
           <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-600 transition-all transform hover:scale-105">
             Get a Quote
           </button>
-          <button onClick={() => scrollToSection('portfolio')} className="border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg text-lg font-medium hover:bg-charcoal hover:text-white transition-all">
-            View Portfolio
+          <button onClick={() => scrollToSection('services')} className="border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg text-lg font-medium hover:bg-charcoal hover:text-white transition-all">
+            View Services
           </button>
         </div>
       </div>

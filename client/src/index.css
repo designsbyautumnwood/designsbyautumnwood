@@ -30,6 +30,7 @@
   --off-white: hsl(0, 0%, 98%);
   --blue-50: hsl(200, 70%, 97%);
   --blue-100: hsl(200, 70%, 94%);
+  --blue-300: hsl(200, 70%, 75%);
   --blue-600: hsl(200, 70%, 55%);
 }
 
@@ -122,6 +123,10 @@
   
   .text-blue-600 {
     color: var(--blue-600);
+  }
+  
+  .bg-blue-300 {
+    background-color: var(--blue-300);
   }
 }
 

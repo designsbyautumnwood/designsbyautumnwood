@@ -3,10 +3,8 @@ import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Services from "@/components/services";
-import Portfolio from "@/components/portfolio";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import Lightbox from "@/components/lightbox";
 
 export default function Home() {
   useEffect(() => {
@@ -58,10 +56,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Portfolio />
       <Contact />
       <Footer />
-      <Lightbox />
     </div>
   );
 }

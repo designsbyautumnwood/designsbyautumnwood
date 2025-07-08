@@ -13,13 +13,13 @@ export default function Footer() {
               Autumnwood Designs - Creating beautiful brands and digital experiences for businesses of all sizes.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-warm-orange transition-colors">
+              <a href="#" className="text-gray-300 hover:text-warm-blue transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-warm-orange transition-colors">
+              <a href="#" className="text-gray-300 hover:text-warm-blue transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-warm-orange transition-colors">
+              <a href="#" className="text-gray-300 hover:text-warm-blue transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
@@ -28,10 +28,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#services" className="hover:text-warm-orange transition-colors">Website Design</a></li>
-              <li><a href="#services" className="hover:text-warm-orange transition-colors">Logo Creation</a></li>
-              <li><a href="#services" className="hover:text-warm-orange transition-colors">Brand Naming</a></li>
-              <li><a href="#services" className="hover:text-warm-orange transition-colors">Brand Strategy</a></li>
+              <li><a href="#services" className="hover:text-warm-blue transition-colors">Website Design</a></li>
+              <li><a href="#services" className="hover:text-warm-blue transition-colors">Logo Creation</a></li>
+              <li><a href="#services" className="hover:text-warm-blue transition-colors">Brand Naming</a></li>
+              <li><a href="#services" className="hover:text-warm-blue transition-colors">Brand Strategy</a></li>
             </ul>
           </div>
           
@@ -39,7 +39,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="mailto:info@designsbyautumnwood.com" className="hover:text-warm-orange transition-colors">
+                <a href="mailto:info@designsbyautumnwood.com" className="hover:text-warm-blue transition-colors">
                   info@designsbyautumnwood.com
                 </a>
               </li>

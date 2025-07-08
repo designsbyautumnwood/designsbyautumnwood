@@ -164,7 +164,7 @@ export default function Contact() {
                           <Input 
                             type="email" 
                             placeholder="john@example.com" 
-                            className="focus:ring-warm-orange focus:border-warm-orange"
+                            className="focus:ring-warm-blue focus:border-warm-blue"
                             {...field} 
                           />
                         </FormControl>
@@ -183,7 +183,7 @@ export default function Contact() {
                         <FormLabel className="text-charcoal">Service Needed *</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="focus:ring-warm-orange focus:border-warm-orange">
+                            <SelectTrigger className="focus:ring-warm-blue focus:border-warm-blue">
                               <SelectValue placeholder="Select a service" />
                             </SelectTrigger>
                           </FormControl>
@@ -206,7 +206,7 @@ export default function Contact() {
                         <FormLabel className="text-charcoal">Budget Range</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="focus:ring-warm-orange focus:border-warm-orange">
+                            <SelectTrigger className="focus:ring-warm-blue focus:border-warm-blue">
                               <SelectValue placeholder="Select budget range" />
                             </SelectTrigger>
                           </FormControl>
@@ -233,7 +233,7 @@ export default function Contact() {
                         <Textarea 
                           rows={6} 
                           placeholder="Tell us about your project, goals, and any specific requirements..."
-                          className="resize-none focus:ring-warm-orange focus:border-warm-orange"
+                          className="resize-none focus:ring-warm-blue focus:border-warm-blue"
                           {...field} 
                         />
                       </FormControl>
@@ -244,7 +244,7 @@ export default function Contact() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-warm-orange hover:bg-orange-600 text-white py-4 px-6 rounded-lg text-lg font-medium transition-all transform hover:scale-105"
+                  className="w-full bg-warm-blue hover:bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-medium transition-all transform hover:scale-105"
                   disabled={contactMutation.isPending}
                 >
                   {contactMutation.isPending ? (
