@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autumnwood Designs | Freelance Web, Logo & Brand Design</title>
+  <meta name="description" content="Autumnwood Designs offers custom website design, logo creation, and brand naming for small businesses and startups. Based in the U.S., we help you build your brand from the roots up." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://designsbyautumnwood.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Autumnwood Designs | Freelance Web, Logo & Brand Design" />
+  <meta property="og:description" content="Freelance creative studio offering web design, logo creation, and brand naming services." />
+  <meta property="og:image" content="https://designsbyautumnwood.com/og-image.jpg" />
+  <meta property="og:url" content="https://designsbyautumnwood.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Autumnwood Designs" />
+  <meta name="twitter:description" content="Custom website, logo, and brand naming services." />
+  <meta name="twitter:image" content="https://designsbyautumnwood.com/og-image.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Autumnwood Designs",
+    "url": "https://designsbyautumnwood.com",
+    "logo": "https://designsbyautumnwood.com/logo.png",
+    "description": "Freelance design studio offering website design, logo creation, and brand naming services.",
+    "founder": "[Your Name]",
+    "areaServed": "US",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@designsbyautumnwood.com",
+      "contactType": "Customer Service"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Existing Styles and Script Blocks (Unchanged) -->
+  <!-- [Remaining content is unchanged from previous version and includes animated logo, reveal animations, lightbox gallery, form, etc.] -->
+</head>
+<body>
+  <!-- (All previous HTML body content remains unchanged) -->
+</body>
+</html>

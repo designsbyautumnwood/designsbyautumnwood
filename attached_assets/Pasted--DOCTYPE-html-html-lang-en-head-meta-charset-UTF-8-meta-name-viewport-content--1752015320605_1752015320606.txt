@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autumnwood Designs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+  <style>
+    :root {
+      --accent: #222;
+      --bg: #fff;
+      --primary: #000;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header.hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .logo {
+      font-size: 60px;
+      font-weight: bold;
+      animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      flex: 1;
+      min-width: 250px;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, select, button {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Lightbox
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.lightbox-trigger').forEach(img => {
+        img.addEventListener('click', () => {
+          const overlay = document.createElement('div');
+          overlay.style.position = 'fixed';
+          overlay.style.top = '0';
+          overlay.style.left = '0';
+          overlay.style.width = '100vw';
+          overlay.style.height = '100vh';
+          overlay.style.background = 'rgba(0,0,0,0.8)';
+          overlay.style.display = 'flex';
+          overlay.style.alignItems = 'center';
+          overlay.style.justifyContent = 'center';
+          overlay.style.zIndex = '999';
+
+          const largeImg = document.createElement('img');
+          largeImg.src = img.src;
+          largeImg.style.maxWidth = '90%';
+          largeImg.style.maxHeight = '90%';
+          overlay.appendChild(largeImg);
+
+          overlay.addEventListener('click', () => document.body.removeChild(overlay));
+
+          document.body.appendChild(overlay);
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="logo animated">AD</div>
+    <h1>Autumnwood Designs</h1>
+    <p class="tagline">Your Brand, Beautifully Built.</p>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </header>
+
+  <section class="about reveal">
+    <h2>About</h2>
+    <p>Autumnwood Designs is a freelance creative studio specializing in website design, logo creation, and brand naming. Whether you're just starting out or need a refresh, we bring your ideas to life with clarity and style.</p>
+  </section>
+
+  <section class="services reveal">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Website Design</h3>
+        <p>Custom, responsive websites built to impress and convert.</p>
+      </div>
+      <div class="service">
+        <h3>Logo Creation</h3>
+        <p>Unique logos that capture the essence of your brand.</p>
+      </div>
+      <div class="service">
+        <h3>Brand Naming</h3>
+        <p>Memorable business names with market-ready appeal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio reveal">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="project1.jpg" alt="Project 1" class="lightbox-trigger" />
+      <img src="project2.jpg" alt="Project 2" class="lightbox-trigger" />
+      <img src="project3.jpg" alt="Project 3" class="lightbox-trigger" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>Request a Quote</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <select>
+        <option>Website Design</option>
+        <option>Logo Creation</option>
+        <option>Brand Naming</option>
+      </select>
+      <textarea placeholder="Tell us about your project..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Autumnwood Designs | <a href="mailto:info@designsbyautumnwood.com">Contact Us</a></p>
+  </footer>
+</body>
+</html>
