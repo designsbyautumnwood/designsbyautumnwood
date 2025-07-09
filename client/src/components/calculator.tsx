@@ -86,7 +86,7 @@ export default function ServicesCalculator() {
           break;
         case "maintenance":
           originalPrice += 150;
-          price += 125; // $150 - $25 = $125 (first month special)
+          price += 100; // $150 - $50 = $100 (first 3 months special)
           break;
         case "hosting":
           originalPrice += 100;
@@ -241,7 +241,7 @@ export default function ServicesCalculator() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { id: "seo", label: "SEO Optimization", price: "$500", discountedPrice: "$425" },
-                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month", discountedPrice: "$125/month (first 3 months)" },
+                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month", discountedPrice: "$100/month (first 3 months)" },
                       { id: "hosting", label: "Web Hosting Setup", price: "$100", discountedPrice: "$85" }
                     ].map((item) => (
                       <div key={item.id} className="flex items-center space-x-2">
