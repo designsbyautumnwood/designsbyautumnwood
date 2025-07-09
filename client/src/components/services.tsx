@@ -1,6 +1,16 @@
 import { Monitor, Heart, FileText } from "lucide-react";
 
 export default function Services() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const services = [
     {
       icon: Monitor,
@@ -59,7 +69,11 @@ export default function Services() {
             const color = colors[index % colors.length];
             
             return (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group border-2 border-transparent hover:border-ocean-blue/20">
+              <div 
+                key={index} 
+                onClick={() => scrollToSection('contact')}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group border-2 border-transparent hover:border-ocean-blue/20 cursor-pointer"
+              >
                 <div className={`w-16 h-16 ${color.bg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
                   <service.icon className={`w-8 h-8 ${color.icon}`} />
                 </div>
