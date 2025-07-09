@@ -68,12 +68,6 @@ export default function ServicesCalculator() {
           case "letterhead":
             price += 150;
             break;
-          case "social-media":
-            price += 300;
-            break;
-          case "brand-guidelines":
-            price += 400;
-            break;
         }
       });
     }
@@ -201,9 +195,7 @@ export default function ServicesCalculator() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { id: "business-cards", label: "Business Cards", price: "$200" },
-                      { id: "letterhead", label: "Letterhead Design", price: "$150" },
-                      { id: "social-media", label: "Social Media Kit", price: "$300" },
-                      { id: "brand-guidelines", label: "Brand Guidelines", price: "$400" }
+                      { id: "letterhead", label: "Letterhead Design", price: "$150" }
                     ].map((item) => (
                       <div key={item.id} className="flex items-center space-x-2">
                         <Checkbox
