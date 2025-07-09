@@ -39,9 +39,7 @@ export default function ServicesCalculator() {
         case "ecommerce":
           price += 2500;
           break;
-        case "custom":
-          price += 3500;
-          break;
+
       }
     } else if (selectedService === "logo") {
       switch (logoComplexity) {
@@ -172,7 +170,6 @@ export default function ServicesCalculator() {
                       <SelectItem value="landing">Landing Page - $800</SelectItem>
                       <SelectItem value="business">Business Website - $1,500</SelectItem>
                       <SelectItem value="ecommerce">E-commerce Store - $2,500</SelectItem>
-                      <SelectItem value="custom">Custom Web App - $3,500+</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
