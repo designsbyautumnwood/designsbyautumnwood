@@ -107,9 +107,12 @@ export default function ServicesCalculator() {
             Services <span className="font-semibold text-ocean-blue">Calculator</span>
           </h2>
           <div className="mb-8 mx-auto max-w-md">
-            <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-lg text-center font-bold text-lg shadow-lg">
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-lg text-center font-bold text-lg shadow-lg hover:from-red-600 hover:to-orange-600 transition-all transform hover:scale-105 cursor-pointer w-full"
+            >
               🔥 SPECIAL OFFER: First 5 Websites Save Up To 30% OFF! 🔥
-            </div>
+            </button>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Get an instant estimate for your project. Select your services and options to see pricing.

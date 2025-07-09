@@ -26,9 +26,12 @@ export default function Hero() {
           <img src="/logo-full.png" alt="Autumnwood Designs" className="w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
         </div>
         <div className="mb-6 mx-auto max-w-lg">
-          <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-full text-center font-bold text-lg animate-pulse shadow-lg">
+          <button 
+            onClick={() => scrollToSection('calculator')}
+            className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-full text-center font-bold text-lg animate-pulse shadow-lg hover:from-red-600 hover:to-orange-600 transition-all transform hover:scale-105 cursor-pointer w-full"
+          >
             🎉 LIMITED TIME: First 5 Websites Get Up To 30% OFF! 🎉
-          </div>
+          </button>
         </div>
         <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Professional Website Design, Logo Creation & Brand Naming Services
