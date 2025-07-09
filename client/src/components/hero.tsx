@@ -22,6 +22,11 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+        <div className="mb-4 flex justify-center">
+          <div className="text-6xl sm:text-7xl md:text-8xl font-bold text-transparent bg-gradient-ocean bg-clip-text tracking-wider animate-pulse">
+            AD
+          </div>
+        </div>
         <div className="animate-bounce-slow mb-0 flex justify-center">
           <img src="/logo-full.png" alt="Autumnwood Designs" className="w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
         </div>
