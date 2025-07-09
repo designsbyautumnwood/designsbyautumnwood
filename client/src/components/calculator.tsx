@@ -66,17 +66,17 @@ export default function ServicesCalculator() {
       }
     }
 
-    // Additional services
+    // Additional services (15% discount applied)
     additionalServices.forEach(service => {
       switch (service) {
         case "seo":
-          price += 500;
+          price += 425; // $500 - 15% = $425
           break;
         case "maintenance":
-          price += 150;
+          price += 128; // $150 - 15% = $128 (rounded)
           break;
         case "hosting":
-          price += 100;
+          price += 85; // $100 - 15% = $85
           break;
       }
     });
@@ -221,9 +221,9 @@ export default function ServicesCalculator() {
                   </Label>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { id: "seo", label: "SEO Optimization", price: "$500" },
-                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month" },
-                      { id: "hosting", label: "Web Hosting Setup", price: "$100" }
+                      { id: "seo", label: "SEO Optimization", price: "$500", discountedPrice: "$425" },
+                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month", discountedPrice: "$128/month" },
+                      { id: "hosting", label: "Web Hosting Setup", price: "$100", discountedPrice: "$85" }
                     ].map((item) => (
                       <div key={item.id} className="flex items-center space-x-2">
                         <Checkbox
@@ -232,7 +232,7 @@ export default function ServicesCalculator() {
                           onCheckedChange={(checked) => handleAdditionalService(item.id, checked as boolean)}
                         />
                         <Label htmlFor={item.id} className="text-sm">
-                          {item.label} - {item.price}
+                          {item.label} - <span className="line-through text-gray-500">{item.price}</span> <span className="text-red-500 font-bold">{item.discountedPrice} (15% OFF!)</span>
                         </Label>
                       </div>
                     ))}
