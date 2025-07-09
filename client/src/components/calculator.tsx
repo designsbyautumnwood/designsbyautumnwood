@@ -10,7 +10,6 @@ export default function ServicesCalculator() {
   const [selectedService, setSelectedService] = useState<string>("");
   const [websiteType, setWebsiteType] = useState<string>("");
   const [logoComplexity, setLogoComplexity] = useState<string>("");
-  const [brandingOptions, setBrandingOptions] = useState<string[]>([]);
   const [additionalServices, setAdditionalServices] = useState<string[]>([]);
   const [totalPrice, setTotalPrice] = useState<number>(0);
 
@@ -56,20 +55,6 @@ export default function ServicesCalculator() {
           price += 1200;
           break;
       }
-    } else if (selectedService === "branding") {
-      price += 1000; // Base branding package
-      
-      // Add branding options
-      brandingOptions.forEach(option => {
-        switch (option) {
-          case "business-cards":
-            price += 200;
-            break;
-          case "letterhead":
-            price += 150;
-            break;
-        }
-      });
     }
 
     // Additional services
@@ -88,14 +73,6 @@ export default function ServicesCalculator() {
     });
 
     setTotalPrice(price);
-  };
-
-  const handleBrandingOption = (option: string, checked: boolean) => {
-    if (checked) {
-      setBrandingOptions([...brandingOptions, option]);
-    } else {
-      setBrandingOptions(brandingOptions.filter(o => o !== option));
-    }
   };
 
   const handleAdditionalService = (service: string, checked: boolean) => {
@@ -142,7 +119,6 @@ export default function ServicesCalculator() {
                   <SelectContent>
                     <SelectItem value="website">Website Design</SelectItem>
                     <SelectItem value="logo">Logo Creation</SelectItem>
-                    <SelectItem value="branding">Complete Branding Package</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -186,31 +162,7 @@ export default function ServicesCalculator() {
                 </div>
               )}
 
-              {/* Branding Options */}
-              {selectedService === "branding" && (
-                <div>
-                  <Label className="text-lg font-semibold text-charcoal mb-4 block">
-                    Branding Package Additions (Base: $1,000)
-                  </Label>
-                  <div className="grid grid-cols-2 gap-4">
-                    {[
-                      { id: "business-cards", label: "Business Cards", price: "$200" },
-                      { id: "letterhead", label: "Letterhead Design", price: "$150" }
-                    ].map((item) => (
-                      <div key={item.id} className="flex items-center space-x-2">
-                        <Checkbox
-                          id={item.id}
-                          checked={brandingOptions.includes(item.id)}
-                          onCheckedChange={(checked) => handleBrandingOption(item.id, checked as boolean)}
-                        />
-                        <Label htmlFor={item.id} className="text-sm">
-                          {item.label} - {item.price}
-                        </Label>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+
 
               {/* Additional Services */}
               {selectedService && (
