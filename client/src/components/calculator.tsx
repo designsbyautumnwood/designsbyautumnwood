@@ -222,7 +222,7 @@ export default function ServicesCalculator() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { id: "seo", label: "SEO Optimization", price: "$500", discountedPrice: "$425" },
-                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month", discountedPrice: "$125/month" },
+                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month", discountedPrice: "$125/month (first 3 months)" },
                       { id: "hosting", label: "Web Hosting Setup", price: "$100", discountedPrice: "$85" }
                     ].map((item) => (
                       <div key={item.id} className="flex items-center space-x-2">
@@ -232,7 +232,9 @@ export default function ServicesCalculator() {
                           onCheckedChange={(checked) => handleAdditionalService(item.id, checked as boolean)}
                         />
                         <Label htmlFor={item.id} className="text-sm">
-                          {item.label} - <span className="line-through text-gray-500">{item.price}</span> <span className="text-red-500 font-bold">{item.discountedPrice} (15% OFF!)</span>
+                          {item.label} - <span className="line-through text-gray-500">{item.price}</span> <span className="text-red-500 font-bold">{item.discountedPrice}</span>
+                          {item.id === "maintenance" && <span className="text-xs text-gray-600 block mt-1">Then $150/month after 3 months</span>}
+                          {item.id !== "maintenance" && <span className="text-red-500 font-bold"> (15% OFF!)</span>}
                         </Label>
                       </div>
                     ))}
