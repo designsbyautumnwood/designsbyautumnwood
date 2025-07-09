@@ -66,7 +66,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
-            Start Your <span className="font-semibold text-deep-blue">Order</span>
+            Order Services <span className="font-semibold text-deep-blue">Here</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to bring your vision to life? Get in touch with us and let's discuss how we can help you create something amazing.
