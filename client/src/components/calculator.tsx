@@ -43,17 +43,11 @@ export default function ServicesCalculator() {
       }
     } else if (selectedService === "logo") {
       switch (logoComplexity) {
-        case "simple":
-          price += 300;
-          break;
         case "standard":
           price += 500;
           break;
         case "premium":
           price += 800;
-          break;
-        case "luxury":
-          price += 1200;
           break;
       }
     } else if (selectedService === "brand-naming") {
@@ -170,10 +164,8 @@ export default function ServicesCalculator() {
                       <SelectValue placeholder="Select logo complexity" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="simple">Simple Logo - $300</SelectItem>
                       <SelectItem value="standard">Standard Logo - $500</SelectItem>
                       <SelectItem value="premium">Premium Logo - $800</SelectItem>
-                      <SelectItem value="luxury">Luxury Logo - $1,200</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
