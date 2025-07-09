@@ -58,14 +58,17 @@ export default function ServicesCalculator() {
       }
     } else if (selectedService === "brand-naming") {
       switch (brandNamingType) {
-        case "basic":
-          price += 400;
+        case "business-name":
+          price += 300;
           break;
-        case "premium":
-          price += 600;
+        case "business-logo":
+          price += 500;
           break;
-        case "comprehensive":
-          price += 800;
+        case "business-website":
+          price += 750;
+          break;
+        case "complete-package":
+          price += 1200;
           break;
       }
     }
@@ -180,16 +183,17 @@ export default function ServicesCalculator() {
               {selectedService === "brand-naming" && (
                 <div>
                   <Label className="text-lg font-semibold text-charcoal mb-4 block">
-                    Brand Naming Package
+                    Brand Naming Service
                   </Label>
                   <Select value={brandNamingType} onValueChange={setBrandNamingType}>
                     <SelectTrigger className="w-full">
-                      <SelectValue placeholder="Select brand naming package" />
+                      <SelectValue placeholder="Select brand naming service" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="basic">Basic Package - $400</SelectItem>
-                      <SelectItem value="premium">Premium Package - $600</SelectItem>
-                      <SelectItem value="comprehensive">Comprehensive Package - $800</SelectItem>
+                      <SelectItem value="business-name">Business Name Creation - $300</SelectItem>
+                      <SelectItem value="business-logo">Business Name + Logo - $500</SelectItem>
+                      <SelectItem value="business-website">Business Name + Website - $750</SelectItem>
+                      <SelectItem value="complete-package">Complete Package (Name + Logo + Website) - $1,200</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
