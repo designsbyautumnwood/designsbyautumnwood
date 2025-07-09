@@ -34,7 +34,7 @@ export default function ServicesCalculator() {
           price += 400; // $750 - $350 promotional discount
           break;
         case "business":
-          price += 650; // $1000 - $350 promotional discount
+          price += 600; // $1000 - $400 promotional discount
           break;
         case "ecommerce":
           price += 1150; // $1500 - $350 promotional discount
@@ -157,7 +157,7 @@ export default function ServicesCalculator() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="landing">Landing Page - $750 <span className="text-red-500 font-bold">($400 with $350 OFF!)</span></SelectItem>
-                      <SelectItem value="business">Business Website - $1,000 <span className="text-red-500 font-bold">($650 with $350 OFF!)</span></SelectItem>
+                      <SelectItem value="business">Business Website - $1,000 <span className="text-red-500 font-bold">($600 with $400 OFF!)</span></SelectItem>
                       <SelectItem value="ecommerce">E-commerce Store - $1,500 <span className="text-red-500 font-bold">($1,150 with $350 OFF!)</span></SelectItem>
                     </SelectContent>
                   </Select>
