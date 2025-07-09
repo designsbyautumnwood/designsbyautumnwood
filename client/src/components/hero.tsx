@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
         <div className="mb-6 mx-auto max-w-lg">
           <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-full text-center font-bold text-lg animate-pulse shadow-lg">
-            🎉 LIMITED TIME: First 5 Websites Get $300 OFF! 🎉
+            🎉 LIMITED TIME: First 5 Websites Get $350 OFF! 🎉
           </div>
         </div>
         <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
