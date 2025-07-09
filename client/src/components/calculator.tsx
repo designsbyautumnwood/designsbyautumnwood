@@ -13,6 +13,7 @@ export default function ServicesCalculator() {
   const [brandNamingType, setBrandNamingType] = useState<string>("");
   const [additionalServices, setAdditionalServices] = useState<string[]>([]);
   const [totalPrice, setTotalPrice] = useState<number>(0);
+  const [originalPrice, setOriginalPrice] = useState<number>(0);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -26,41 +27,51 @@ export default function ServicesCalculator() {
 
   const calculatePrice = () => {
     let price = 0;
+    let originalPrice = 0;
     
     // Base service pricing
     if (selectedService === "website") {
       switch (websiteType) {
         case "landing":
+          originalPrice += 750;
           price += 400; // $750 - $350 promotional discount
           break;
         case "business":
+          originalPrice += 1000;
           price += 600; // $1000 - $400 promotional discount
           break;
         case "ecommerce":
+          originalPrice += 1500;
           price += 1100; // $1500 - $400 promotional discount
           break;
       }
     } else if (selectedService === "logo") {
       switch (logoComplexity) {
         case "standard":
+          originalPrice += 500;
           price += 500;
           break;
         case "premium":
+          originalPrice += 800;
           price += 800;
           break;
       }
     } else if (selectedService === "brand-naming") {
       switch (brandNamingType) {
         case "business-name":
+          originalPrice += 300;
           price += 300;
           break;
         case "business-logo":
+          originalPrice += 500;
           price += 500;
           break;
         case "business-website":
+          originalPrice += 750;
           price += 750;
           break;
         case "complete-package":
+          originalPrice += 1200;
           price += 1200;
           break;
       }
@@ -70,18 +81,22 @@ export default function ServicesCalculator() {
     additionalServices.forEach(service => {
       switch (service) {
         case "seo":
+          originalPrice += 500;
           price += 425; // $500 - 15% = $425
           break;
         case "maintenance":
+          originalPrice += 150;
           price += 125; // $150 - $25 = $125 (first month special)
           break;
         case "hosting":
+          originalPrice += 100;
           price += 85; // $100 - 15% = $85
           break;
       }
     });
 
     console.log("Calculated price:", price);
+    console.log("Original price:", originalPrice);
     console.log("Selected service:", selectedService);
     console.log("Website type:", websiteType);
     console.log("Logo complexity:", logoComplexity);
@@ -89,6 +104,7 @@ export default function ServicesCalculator() {
     console.log("Additional services:", additionalServices);
     
     setTotalPrice(price);
+    setOriginalPrice(originalPrice);
   };
 
   const handleAdditionalService = (service: string, checked: boolean) => {
@@ -258,10 +274,25 @@ export default function ServicesCalculator() {
               {/* Price Display */}
               {totalPrice > 0 && (
                 <div className="bg-white border-2 border-ocean-blue p-6 rounded-lg text-center shadow-lg">
-                  <div className="flex items-center justify-center mb-2">
-                    <DollarSign className="w-8 h-8 mr-2 text-ocean-blue" />
-                    <span className="text-3xl font-bold text-charcoal">${totalPrice.toLocaleString()}</span>
-                  </div>
+                  {originalPrice > totalPrice ? (
+                    <div className="mb-4">
+                      <div className="flex items-center justify-center mb-2">
+                        <span className="text-xl text-gray-500 line-through mr-3">
+                          ${originalPrice.toLocaleString()}
+                        </span>
+                        <DollarSign className="w-8 h-8 mr-2 text-ocean-blue" />
+                        <span className="text-3xl font-bold text-charcoal">${totalPrice.toLocaleString()}</span>
+                      </div>
+                      <div className="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium inline-block mb-2">
+                        You Save: ${(originalPrice - totalPrice).toLocaleString()}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-center mb-2">
+                      <DollarSign className="w-8 h-8 mr-2 text-ocean-blue" />
+                      <span className="text-3xl font-bold text-charcoal">${totalPrice.toLocaleString()}</span>
+                    </div>
+                  )}
                   <p className="text-gray-600 mb-4 text-lg font-medium">Estimated Project Cost</p>
                   <Button
                     onClick={() => scrollToSection('contact')}
