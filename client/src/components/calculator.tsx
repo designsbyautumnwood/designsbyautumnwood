@@ -259,8 +259,19 @@ export default function ServicesCalculator() {
                     ))}
                   </div>
                   
+                  {/* Payment Terms Notice */}
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-6">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-5 h-5 bg-blue-400 rounded-full flex-shrink-0 mt-0.5"></div>
+                      <div className="text-sm text-blue-800">
+                        <p className="font-medium mb-1">Payment Terms</p>
+                        <p>Payment is due upon completion of your project. Your completed website, logo, or brand will be delivered once payment has cleared.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
                   {/* Post-Launch Changes Notice */}
-                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4">
                     <div className="flex items-start space-x-3">
                       <div className="w-5 h-5 bg-yellow-400 rounded-full flex-shrink-0 mt-0.5"></div>
                       <div className="text-sm text-yellow-800">

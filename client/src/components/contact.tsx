@@ -250,10 +250,21 @@ export default function Contact() {
                   )}
                 />
                 
-                {/* Post-Launch Changes Notice */}
-                <div className="bg-gray-800 border border-gray-600 rounded-lg p-4">
+                {/* Payment Terms Notice */}
+                <div className="bg-gray-800 border border-blue-600 rounded-lg p-4">
                   <div className="flex items-start space-x-3">
                     <div className="w-5 h-5 bg-blue-400 rounded-full flex-shrink-0 mt-0.5"></div>
+                    <div className="text-sm text-gray-300">
+                      <p className="font-medium mb-1 text-white">Payment Terms</p>
+                      <p>Payment is due upon completion of your project. Your completed website, logo, or brand will be delivered once payment has cleared.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Post-Launch Changes Notice */}
+                <div className="bg-gray-800 border border-gray-600 rounded-lg p-4 mt-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-yellow-400 rounded-full flex-shrink-0 mt-0.5"></div>
                     <div className="text-sm text-gray-300">
                       <p className="font-medium mb-1 text-white">Important Note</p>
                       <p>Changes to your website, logo, or brand after project completion are quoted separately based on each modification's scope. This ensures transparent pricing for future updates.</p>
