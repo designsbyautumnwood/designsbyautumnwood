@@ -31,7 +31,7 @@ export default function ServicesCalculator() {
     if (selectedService === "website") {
       switch (websiteType) {
         case "landing":
-          price += 800;
+          price += 750;
           break;
         case "business":
           price += 1000;
@@ -167,7 +167,7 @@ export default function ServicesCalculator() {
                       <SelectValue placeholder="Select website type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="landing">Landing Page - $800</SelectItem>
+                      <SelectItem value="landing">Landing Page - $750</SelectItem>
                       <SelectItem value="business">Business Website - $1,000</SelectItem>
                       <SelectItem value="ecommerce">E-commerce Store - $1,500</SelectItem>
                     </SelectContent>
