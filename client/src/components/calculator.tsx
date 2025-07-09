@@ -39,7 +39,6 @@ export default function ServicesCalculator() {
         case "ecommerce":
           price += 1500;
           break;
-
       }
     } else if (selectedService === "logo") {
       switch (logoComplexity) {
@@ -82,6 +81,13 @@ export default function ServicesCalculator() {
       }
     });
 
+    console.log("Calculated price:", price);
+    console.log("Selected service:", selectedService);
+    console.log("Website type:", websiteType);
+    console.log("Logo complexity:", logoComplexity);
+    console.log("Brand naming type:", brandNamingType);
+    console.log("Additional services:", additionalServices);
+    
     setTotalPrice(price);
   };
 
