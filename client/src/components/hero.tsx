@@ -25,6 +25,11 @@ export default function Hero() {
         <div className="animate-bounce-slow mb-0 flex justify-center">
           <img src="/logo-full.png" alt="Autumnwood Designs" className="w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
         </div>
+        <div className="mb-6 mx-auto max-w-lg">
+          <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-full text-center font-bold text-lg animate-pulse shadow-lg">
+            🎉 LIMITED TIME: First 5 Websites Get $300 OFF! 🎉
+          </div>
+        </div>
         <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Professional Website Design, Logo Creation & Brand Naming Services
         </h1>

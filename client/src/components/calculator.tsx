@@ -31,13 +31,13 @@ export default function ServicesCalculator() {
     if (selectedService === "website") {
       switch (websiteType) {
         case "landing":
-          price += 750;
+          price += 450; // $750 - $300 promotional discount
           break;
         case "business":
-          price += 1000;
+          price += 700; // $1000 - $300 promotional discount
           break;
         case "ecommerce":
-          price += 1500;
+          price += 1200; // $1500 - $300 promotional discount
           break;
       }
     } else if (selectedService === "logo") {
@@ -106,6 +106,11 @@ export default function ServicesCalculator() {
           <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
             Services <span className="font-semibold text-ocean-blue">Calculator</span>
           </h2>
+          <div className="mb-8 mx-auto max-w-md">
+            <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-lg text-center font-bold text-lg shadow-lg">
+              🔥 SPECIAL OFFER: First 5 Websites Save $300! 🔥
+            </div>
+          </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Get an instant estimate for your project. Select your services and options to see pricing.
           </p>
@@ -151,9 +156,9 @@ export default function ServicesCalculator() {
                       <SelectValue placeholder="Select website type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="landing">Landing Page - $750</SelectItem>
-                      <SelectItem value="business">Business Website - $1,000</SelectItem>
-                      <SelectItem value="ecommerce">E-commerce Store - $1,500</SelectItem>
+                      <SelectItem value="landing">Landing Page - $750 <span className="text-red-500 font-bold">($450 with $300 OFF!)</span></SelectItem>
+                      <SelectItem value="business">Business Website - $1,000 <span className="text-red-500 font-bold">($700 with $300 OFF!)</span></SelectItem>
+                      <SelectItem value="ecommerce">E-commerce Store - $1,500 <span className="text-red-500 font-bold">($1,200 with $300 OFF!)</span></SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
