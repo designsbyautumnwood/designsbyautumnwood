@@ -10,9 +10,25 @@ export default function About() {
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Autumnwood Designs is a professional freelance web design studio offering custom website design, logo creation, and brand naming services for small businesses and startups across the United States.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               We specialize in creating responsive, SEO-optimized websites, memorable logo designs, and strategic brand naming that helps your business stand out online and attract more customers.
             </p>
+            <div className="bg-gradient-to-r from-ocean-blue/10 to-deep-blue/10 border-l-4 border-ocean-blue p-6 rounded-lg mb-8">
+              <div className="flex items-center mb-3">
+                <div className="w-3 h-3 bg-ocean-blue rounded-full mr-3 animate-pulse"></div>
+                <h3 className="text-lg font-semibold text-charcoal">Live Example</h3>
+              </div>
+              <p className="text-gray-700 mb-2">
+                <strong>You're currently viewing a live example of our web development skills!</strong> This website showcases our ability to create:
+              </p>
+              <ul className="text-gray-600 space-y-1 text-sm">
+                <li>• Modern React-based architecture with TypeScript</li>
+                <li>• Responsive design that works on all devices</li>
+                <li>• Interactive pricing calculator with promotional campaigns</li>
+                <li>• Working contact form with email integration</li>
+                <li>• SEO-optimized structure for better search rankings</li>
+              </ul>
+            </div>
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="text-center sm:text-left">
                 <div className="text-3xl font-bold text-warm-blue mb-2">50+</div>

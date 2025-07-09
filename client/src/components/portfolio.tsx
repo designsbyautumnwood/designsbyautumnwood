@@ -5,6 +5,13 @@ export default function Portfolio() {
 
   const portfolioItems = [
     {
+      src: "/logo-full.png",
+      alt: "Autumnwood Designs - Live Website Example",
+      title: "Autumnwood Designs (Current Site)",
+      description: "Full-stack React website with promotional campaigns, calculator, and email integration - Example of our web development skills",
+      isCurrentSite: true
+    },
+    {
       src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600",
       alt: "Modern e-commerce website design",
       title: "E-commerce Platform",
@@ -56,17 +63,29 @@ export default function Portfolio() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <div key={index} className="group cursor-pointer" onClick={() => setSelectedImage(item.src)}>
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+            <div key={index} className={`group cursor-pointer ${item.isCurrentSite ? 'md:col-span-2 lg:col-span-1' : ''}`} onClick={() => setSelectedImage(item.src)}>
+              <div className={`relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 ${item.isCurrentSite ? 'ring-2 ring-ocean-blue shadow-ocean-blue/20' : ''}`}>
+                {item.isCurrentSite && (
+                  <div className="absolute top-4 right-4 z-10">
+                    <div className="bg-gradient-to-r from-ocean-blue to-deep-blue text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                      🌟 Live Example
+                    </div>
+                  </div>
+                )}
                 <img 
                   src={item.src} 
                   alt={item.alt} 
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className={`w-full object-cover group-hover:scale-110 transition-transform duration-500 ${item.isCurrentSite ? 'h-80 object-contain bg-gradient-to-br from-powder-blue/20 to-sky-blue/20' : 'h-64 object-cover'}`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
                     <p className="text-sm text-gray-200">{item.description}</p>
+                    {item.isCurrentSite && (
+                      <div className="mt-2 text-xs text-cyan-300">
+                        ✓ You're experiencing this live website right now
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
