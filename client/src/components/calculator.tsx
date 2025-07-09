@@ -236,15 +236,15 @@ export default function ServicesCalculator() {
 
               {/* Price Display */}
               {totalPrice > 0 && (
-                <div className="bg-gradient-to-r from-ocean-blue to-deep-blue text-white p-6 rounded-lg text-center">
+                <div className="bg-white border-2 border-ocean-blue p-6 rounded-lg text-center shadow-lg">
                   <div className="flex items-center justify-center mb-2">
-                    <DollarSign className="w-8 h-8 mr-2" />
-                    <span className="text-3xl font-bold">${totalPrice.toLocaleString()}</span>
+                    <DollarSign className="w-8 h-8 mr-2 text-ocean-blue" />
+                    <span className="text-3xl font-bold text-charcoal">${totalPrice.toLocaleString()}</span>
                   </div>
-                  <p className="text-white/90 mb-4">Estimated Project Cost</p>
+                  <p className="text-gray-600 mb-4 text-lg font-medium">Estimated Project Cost</p>
                   <Button
                     onClick={() => scrollToSection('contact')}
-                    className="bg-white text-ocean-blue hover:bg-gray-100 font-medium"
+                    className="bg-gradient-ocean text-white hover:bg-deep-blue font-medium"
                   >
                     <CheckCircle className="w-4 h-4 mr-2" />
                     Get Official Quote
