@@ -10,6 +10,7 @@ export default function ServicesCalculator() {
   const [selectedService, setSelectedService] = useState<string>("");
   const [websiteType, setWebsiteType] = useState<string>("");
   const [logoComplexity, setLogoComplexity] = useState<string>("");
+  const [brandNamingType, setBrandNamingType] = useState<string>("");
   const [additionalServices, setAdditionalServices] = useState<string[]>([]);
   const [totalPrice, setTotalPrice] = useState<number>(0);
 
@@ -53,6 +54,18 @@ export default function ServicesCalculator() {
           break;
         case "luxury":
           price += 1200;
+          break;
+      }
+    } else if (selectedService === "brand-naming") {
+      switch (brandNamingType) {
+        case "basic":
+          price += 400;
+          break;
+        case "premium":
+          price += 600;
+          break;
+        case "comprehensive":
+          price += 800;
           break;
       }
     }
@@ -119,6 +132,7 @@ export default function ServicesCalculator() {
                   <SelectContent>
                     <SelectItem value="website">Website Design</SelectItem>
                     <SelectItem value="logo">Logo Creation</SelectItem>
+                    <SelectItem value="brand-naming">Brand Naming</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -162,7 +176,24 @@ export default function ServicesCalculator() {
                 </div>
               )}
 
-
+              {/* Brand Naming Options */}
+              {selectedService === "brand-naming" && (
+                <div>
+                  <Label className="text-lg font-semibold text-charcoal mb-4 block">
+                    Brand Naming Package
+                  </Label>
+                  <Select value={brandNamingType} onValueChange={setBrandNamingType}>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Select brand naming package" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="basic">Basic Package - $400</SelectItem>
+                      <SelectItem value="premium">Premium Package - $600</SelectItem>
+                      <SelectItem value="comprehensive">Comprehensive Package - $800</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              )}
 
               {/* Additional Services */}
               {selectedService && (
@@ -195,7 +226,7 @@ export default function ServicesCalculator() {
               <Button
                 onClick={calculatePrice}
                 className="w-full bg-gradient-sky hover:bg-ocean-blue text-white py-4 text-lg font-medium"
-                disabled={!selectedService || (selectedService === "website" && !websiteType) || (selectedService === "logo" && !logoComplexity)}
+                disabled={!selectedService || (selectedService === "website" && !websiteType) || (selectedService === "logo" && !logoComplexity) || (selectedService === "brand-naming" && !brandNamingType)}
               >
                 <Calculator className="w-5 h-5 mr-2" />
                 Calculate Estimate
