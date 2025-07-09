@@ -84,11 +84,8 @@ export default function ServicesCalculator() {
         case "seo":
           price += 500;
           break;
-        case "copywriting":
-          price += 400;
-          break;
         case "maintenance":
-          price += 200;
+          price += 150;
           break;
         case "hosting":
           price += 100;
@@ -232,8 +229,7 @@ export default function ServicesCalculator() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { id: "seo", label: "SEO Optimization", price: "$500" },
-                      { id: "copywriting", label: "Professional Copywriting", price: "$400" },
-                      { id: "maintenance", label: "Monthly Maintenance", price: "$200/month" },
+                      { id: "maintenance", label: "Monthly Maintenance", price: "$150/month" },
                       { id: "hosting", label: "Web Hosting Setup", price: "$100" }
                     ].map((item) => (
                       <div key={item.id} className="flex items-center space-x-2">
