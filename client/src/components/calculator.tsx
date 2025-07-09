@@ -34,10 +34,10 @@ export default function ServicesCalculator() {
           price += 800;
           break;
         case "business":
-          price += 1500;
+          price += 1000;
           break;
         case "ecommerce":
-          price += 2500;
+          price += 1500;
           break;
 
       }
@@ -168,8 +168,8 @@ export default function ServicesCalculator() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="landing">Landing Page - $800</SelectItem>
-                      <SelectItem value="business">Business Website - $1,500</SelectItem>
-                      <SelectItem value="ecommerce">E-commerce Store - $2,500</SelectItem>
+                      <SelectItem value="business">Business Website - $1,000</SelectItem>
+                      <SelectItem value="ecommerce">E-commerce Store - $1,500</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
