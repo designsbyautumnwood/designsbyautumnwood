@@ -258,6 +258,17 @@ export default function ServicesCalculator() {
                       </div>
                     ))}
                   </div>
+                  
+                  {/* Post-Launch Changes Notice */}
+                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-5 h-5 bg-yellow-400 rounded-full flex-shrink-0 mt-0.5"></div>
+                      <div className="text-sm text-yellow-800">
+                        <p className="font-medium mb-1">Post-Launch Changes</p>
+                        <p>Additional changes to your website after launch will be quoted separately based on the scope of each modification. This ensures you only pay for what you need.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
 

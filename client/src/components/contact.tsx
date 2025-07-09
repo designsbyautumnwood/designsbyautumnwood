@@ -250,6 +250,17 @@ export default function Contact() {
                   )}
                 />
                 
+                {/* Post-Launch Changes Notice */}
+                <div className="bg-gray-800 border border-gray-600 rounded-lg p-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-blue-400 rounded-full flex-shrink-0 mt-0.5"></div>
+                    <div className="text-sm text-gray-300">
+                      <p className="font-medium mb-1 text-white">Important Note</p>
+                      <p>Website changes after launch are quoted separately based on each modification's scope. This ensures transparent pricing for future updates.</p>
+                    </div>
+                  </div>
+                </div>
+                
                 <Button 
                   type="submit" 
                   className="w-full bg-gradient-deep hover:bg-deep-blue text-white py-4 px-6 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
