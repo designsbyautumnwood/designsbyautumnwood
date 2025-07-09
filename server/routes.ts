@@ -7,12 +7,12 @@ import nodemailer from "nodemailer";
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || "smtp.gmail.com",
-  port: parseInt(process.env.SMTP_PORT || "587"),
+  host: "smtp.gmail.com",
+  port: 587,
   secure: false,
   auth: {
-    user: process.env.SMTP_USER || process.env.EMAIL_USER,
-    pass: process.env.SMTP_PASS || process.env.EMAIL_PASS,
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
   },
 });
 
@@ -30,8 +30,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Send email notification
       try {
         await transporter.sendMail({
-          from: process.env.SMTP_FROM || process.env.EMAIL_FROM || "noreply@autumnwooddesigns.com",
-          to: process.env.CONTACT_EMAIL || "info@designsbyautumnwood.com",
+          from: process.env.SMTP_USER || "designsbyautumnwood@gmail.com",
+          to: process.env.CONTACT_EMAIL || "designsbyautumnwood@gmail.com",
           subject: `New Quote Request - ${validatedData.service}`,
           html: `
             <h2>New Quote Request from Autumnwood Designs Website</h2>
@@ -48,7 +48,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         
         // Send confirmation email to user
         await transporter.sendMail({
-          from: process.env.SMTP_FROM || process.env.EMAIL_FROM || "noreply@autumnwooddesigns.com",
+          from: process.env.SMTP_USER || "designsbyautumnwood@gmail.com",
           to: validatedData.email,
           subject: "Quote Request Received - Autumnwood Designs",
           html: `
@@ -56,7 +56,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
             <p>Hi ${validatedData.name},</p>
             <p>We've received your quote request for <strong>${validatedData.service}</strong> services.</p>
             <p>We'll review your requirements and get back to you within 24 hours.</p>
-            <p>If you have any urgent questions, please don't hesitate to contact us directly at info@designsbyautumnwood.com.</p>
+            <p>If you have any urgent questions, please don't hesitate to contact us directly at designsbyautumnwood@gmail.com.</p>
             <br>
             <p>Best regards,<br>
             The Autumnwood Designs Team</p>
