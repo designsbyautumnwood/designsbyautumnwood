@@ -19,6 +19,7 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-sky-blue transition-colors font-medium">About</button>
             <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-ocean-blue transition-colors font-medium">Services</button>
+            <button onClick={() => scrollToSection('calculator')} className="text-gray-300 hover:text-cyan-blue transition-colors font-medium">Calculator</button>
             <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-teal-blue transition-colors font-medium">Contact</button>
           </div>
           <button onClick={() => scrollToSection('contact')} className="bg-gradient-ocean text-white px-4 py-2 rounded-lg hover:bg-deep-blue transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
