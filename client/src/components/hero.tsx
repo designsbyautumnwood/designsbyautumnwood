@@ -19,7 +19,10 @@ export default function Hero() {
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <div className="animate-bounce-slow mb-0 flex justify-center">
-          <img src="/logo-full.png" alt="Autumnwood Designs" className="w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/90 to-blue-50/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 -m-8"></div>
+            <img src="/logo-full.png" alt="Autumnwood Designs" className="relative w-[400px] sm:w-[480px] md:w-[520px] h-auto max-w-full" />
+          </div>
         </div>
         <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Professional Website Design, Logo Creation & Brand Naming Services
