@@ -150,7 +150,7 @@ export default function Contact() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-charcoal">Your Name *</FormLabel>
+                        <FormLabel className="text-white">Your Name *</FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="John Doe" 
@@ -167,7 +167,7 @@ export default function Contact() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-charcoal">Email Address *</FormLabel>
+                        <FormLabel className="text-white">Email Address *</FormLabel>
                         <FormControl>
                           <Input 
                             type="email" 
@@ -188,7 +188,7 @@ export default function Contact() {
                     name="service"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-charcoal">Service Needed *</FormLabel>
+                        <FormLabel className="text-white">Service Needed *</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger className="focus:ring-warm-blue focus:border-warm-blue">
@@ -211,7 +211,7 @@ export default function Contact() {
                     name="budget"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-charcoal">Budget Range</FormLabel>
+                        <FormLabel className="text-white">Budget Range</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger className="focus:ring-warm-blue focus:border-warm-blue">
@@ -236,7 +236,7 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-charcoal">Project Details *</FormLabel>
+                      <FormLabel className="text-white">Project Details *</FormLabel>
                       <FormControl>
                         <Textarea 
                           rows={6} 
