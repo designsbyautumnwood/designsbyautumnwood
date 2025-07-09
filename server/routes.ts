@@ -16,6 +16,21 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+async function sendEmail(to: string, subject: string, html: string, from?: string) {
+  try {
+    await transporter.sendMail({
+      from: from || process.env.SMTP_USER || "designsbyautumnwood@gmail.com",
+      to,
+      subject,
+      html,
+    });
+    return true;
+  } catch (error) {
+    console.error("Email sending failed:", error);
+    return false;
+  }
+}
+
 export async function registerRoutes(app: Express): Promise<Server> {
   
   // Contact form submission endpoint
@@ -29,11 +44,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Send email notification
       try {
-        await transporter.sendMail({
-          from: process.env.SMTP_USER || "designsbyautumnwood@gmail.com",
-          to: process.env.CONTACT_EMAIL || "designsbyautumnwood@gmail.com",
-          subject: `New Quote Request - ${validatedData.service}`,
-          html: `
+        // Send notification to business owner
+        await sendEmail(
+          "designsbyautumnwood@gmail.com",
+          `New Quote Request - ${validatedData.service}`,
+          `
             <h2>New Quote Request from Autumnwood Designs Website</h2>
             <p><strong>Name:</strong> ${validatedData.name}</p>
             <p><strong>Email:</strong> ${validatedData.email}</p>
@@ -43,15 +58,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
             <p>${validatedData.message.replace(/\n/g, '<br>')}</p>
             <hr>
             <p><em>Submitted at: ${new Date().toLocaleString()}</em></p>
-          `,
-        });
+          `
+        );
         
         // Send confirmation email to user
-        await transporter.sendMail({
-          from: process.env.SMTP_USER || "designsbyautumnwood@gmail.com",
-          to: validatedData.email,
-          subject: "Quote Request Received - Autumnwood Designs",
-          html: `
+        await sendEmail(
+          validatedData.email,
+          "Quote Request Received - Autumnwood Designs",
+          `
             <h2>Thank you for your quote request!</h2>
             <p>Hi ${validatedData.name},</p>
             <p>We've received your quote request for <strong>${validatedData.service}</strong> services.</p>
@@ -60,8 +74,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
             <br>
             <p>Best regards,<br>
             The Autumnwood Designs Team</p>
-          `,
-        });
+          `
+        );
         
       } catch (emailError) {
         console.error("Email sending failed:", emailError);
