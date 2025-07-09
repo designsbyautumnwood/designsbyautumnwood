@@ -141,6 +141,7 @@ export default function ServicesCalculator() {
                     <SelectItem value="website">Website Design</SelectItem>
                     <SelectItem value="logo">Logo Creation</SelectItem>
                     <SelectItem value="brand-naming">Brand Naming</SelectItem>
+                    <SelectItem value="additional-only">Additional Services Only</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -202,6 +203,16 @@ export default function ServicesCalculator() {
                 </div>
               )}
 
+              {/* Additional Services Only Message */}
+              {selectedService === "additional-only" && (
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h3 className="text-lg font-semibold text-ocean-blue mb-2">Additional Services</h3>
+                  <p className="text-gray-600 mb-4">
+                    Select from our additional services below. These can be added to any project or purchased separately.
+                  </p>
+                </div>
+              )}
+
               {/* Additional Services */}
               {selectedService && (
                 <div>
@@ -233,7 +244,7 @@ export default function ServicesCalculator() {
               <Button
                 onClick={calculatePrice}
                 className="w-full bg-gradient-sky hover:bg-ocean-blue text-white py-4 text-lg font-medium"
-                disabled={!selectedService || (selectedService === "website" && !websiteType) || (selectedService === "logo" && !logoComplexity) || (selectedService === "brand-naming" && !brandNamingType)}
+                disabled={!selectedService || (selectedService === "website" && !websiteType) || (selectedService === "logo" && !logoComplexity) || (selectedService === "brand-naming" && !brandNamingType) || (selectedService === "additional-only" && additionalServices.length === 0)}
               >
                 <Calculator className="w-5 h-5 mr-2" />
                 Calculate Estimate
