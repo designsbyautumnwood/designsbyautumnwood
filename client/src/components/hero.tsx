@@ -22,8 +22,8 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
-        <div className="mb-4 flex justify-center">
-          <div className="text-6xl sm:text-7xl md:text-8xl font-bold text-transparent bg-gradient-ocean bg-clip-text tracking-wider animate-pulse">
+        <div className="mb-6 flex justify-center">
+          <div className="text-7xl sm:text-8xl md:text-9xl font-black text-blue-600 tracking-widest drop-shadow-2xl">
             AD
           </div>
         </div>
