@@ -275,7 +275,7 @@ export default function Contact() {
                       Sending...
                     </span>
                   ) : (
-                    "Send Quote Request"
+                    "Place Order"
                   )}
                 </Button>
               </form>

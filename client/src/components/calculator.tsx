@@ -310,7 +310,7 @@ export default function ServicesCalculator() {
                     className="bg-gradient-ocean text-white hover:bg-deep-blue font-medium"
                   >
                     <CheckCircle className="w-4 h-4 mr-2" />
-                    Get Official Quote
+                    Order Here
                   </Button>
                 </div>
               )}
