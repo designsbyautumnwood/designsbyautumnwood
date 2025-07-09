@@ -108,7 +108,7 @@ export default function ServicesCalculator() {
           </h2>
           <div className="mb-8 mx-auto max-w-md">
             <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-lg text-center font-bold text-lg shadow-lg">
-              🔥 SPECIAL OFFER: First 5 Websites Save $350! 🔥
+              🔥 SPECIAL OFFER: First 5 Websites Save Up To 30% OFF! 🔥
             </div>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -157,9 +157,9 @@ export default function ServicesCalculator() {
                       <SelectValue placeholder="Select website type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="landing">Landing Page - $750 <span className="text-red-500 font-bold">($400 with $350 OFF!)</span></SelectItem>
-                      <SelectItem value="business">Business Website - $1,000 <span className="text-red-500 font-bold">($600 with $400 OFF!)</span></SelectItem>
-                      <SelectItem value="ecommerce">E-commerce Store - $1,500 <span className="text-red-500 font-bold">($1,100 with $400 OFF!)</span></SelectItem>
+                      <SelectItem value="landing">Landing Page - $750 <span className="text-red-500 font-bold">($400 with up to 30% OFF!)</span></SelectItem>
+                      <SelectItem value="business">Business Website - $1,000 <span className="text-red-500 font-bold">($600 with up to 30% OFF!)</span></SelectItem>
+                      <SelectItem value="ecommerce">E-commerce Store - $1,500 <span className="text-red-500 font-bold">($1,100 with up to 30% OFF!)</span></SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
