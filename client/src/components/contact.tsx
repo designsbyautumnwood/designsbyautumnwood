@@ -256,7 +256,7 @@ export default function Contact() {
                     <div className="w-5 h-5 bg-blue-400 rounded-full flex-shrink-0 mt-0.5"></div>
                     <div className="text-sm text-gray-300">
                       <p className="font-medium mb-1 text-white">Important Note</p>
-                      <p>Website changes after launch are quoted separately based on each modification's scope. This ensures transparent pricing for future updates.</p>
+                      <p>Changes to your website, logo, or brand after project completion are quoted separately based on each modification's scope. This ensures transparent pricing for future updates.</p>
                     </div>
                   </div>
                 </div>
