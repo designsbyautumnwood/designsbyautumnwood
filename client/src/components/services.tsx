@@ -38,11 +38,11 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gray-50 reveal">
+    <section id="services" className="py-24 bg-gradient-to-br from-ice-blue/10 via-powder-blue/10 to-sky-blue/10 reveal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
-            Website Design, Logo & Brand Naming <span className="font-semibold">Services</span>
+            Website Design, Logo & Brand Naming <span className="font-semibold text-ocean-blue">Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Professional web design services, custom logo creation, and strategic brand naming for small businesses and startups. Get a free quote today.
@@ -50,20 +50,32 @@ export default function Services() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
-              <div className="w-16 h-16 bg-warm-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-warm-blue/20 transition-colors">
-                <service.icon className="w-8 h-8 text-warm-blue" />
+          {services.map((service, index) => {
+            const colors = [
+              { bg: 'bg-gradient-ocean', icon: 'text-white', accent: 'bg-sky-blue' },
+              { bg: 'bg-gradient-sky', icon: 'text-white', accent: 'bg-teal-blue' },
+              { bg: 'bg-gradient-deep', icon: 'text-white', accent: 'bg-ocean-blue' }
+            ];
+            const color = colors[index % colors.length];
+            
+            return (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group border-2 border-transparent hover:border-ocean-blue/20">
+                <div className={`w-16 h-16 ${color.bg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+                  <service.icon className={`w-8 h-8 ${color.icon}`} />
+                </div>
+                <h3 className="text-2xl font-semibold mb-4 text-charcoal group-hover:text-ocean-blue transition-colors">{service.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <ul className="text-sm text-gray-500 space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center">
+                      <span className={`w-2 h-2 ${color.accent} rounded-full mr-3`}></span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-charcoal">{service.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-              <ul className="text-sm text-gray-500 space-y-2">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex}>• {feature}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

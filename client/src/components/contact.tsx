@@ -62,11 +62,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 reveal">
+    <section id="contact" className="py-24 bg-gradient-to-br from-powder-blue/10 via-sky-blue/10 to-cyan-blue/10 reveal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light mb-8 text-charcoal">
-            Request a <span className="font-semibold">Quote</span>
+            Request a <span className="font-semibold text-deep-blue">Quote</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to bring your vision to life? Get in touch with us and let's discuss how we can help you create something amazing.
@@ -80,8 +80,8 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold mb-6 text-charcoal">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-warm-blue" />
+                  <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center shadow-md">
+                    <Mail className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Email</div>
@@ -89,8 +89,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-warm-blue" />
+                  <div className="w-10 h-10 bg-gradient-sky rounded-lg flex items-center justify-center shadow-md">
+                    <Clock className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Response Time</div>
@@ -98,8 +98,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-warm-blue/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-warm-blue" />
+                  <div className="w-10 h-10 bg-gradient-deep rounded-lg flex items-center justify-center shadow-md">
+                    <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <div className="font-medium text-charcoal">Location</div>
@@ -109,23 +109,31 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="bg-warm-blue text-white p-8 rounded-2xl">
+            <div className="bg-gradient-ocean text-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Why Choose Autumnwood Designs?</h3>
-              <ul className="space-y-3 text-blue-100">
+              <ul className="space-y-3 text-white/90">
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 flex-shrink-0" />
+                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
                   <span>Personalized service and attention to detail</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 flex-shrink-0" />
+                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
                   <span>Fast turnaround times without compromise</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 flex-shrink-0" />
+                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
                   <span>Affordable pricing for quality work</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 flex-shrink-0" />
+                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
                   <span>Ongoing support and revisions</span>
                 </li>
               </ul>
@@ -244,7 +252,7 @@ export default function Contact() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-warm-blue hover:bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-medium transition-all transform hover:scale-105"
+                  className="w-full bg-gradient-deep hover:bg-deep-blue text-white py-4 px-6 rounded-lg text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                   disabled={contactMutation.isPending}
                 >
                   {contactMutation.isPending ? (

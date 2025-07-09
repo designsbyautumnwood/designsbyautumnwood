@@ -11,10 +11,14 @@ export default function Hero() {
 
   return (
     <header className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50"></div>
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-warm-blue rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-gradient-cool opacity-20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-white"></div>
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-sky-blue rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-ocean-blue rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-deep-blue rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/6 right-1/6 w-48 h-48 bg-royal-blue rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/6 left-1/6 w-56 h-56 bg-teal-blue rounded-full blur-3xl animate-pulse"></div>
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
@@ -28,10 +32,10 @@ export default function Hero() {
           Get a custom website design, professional logo, and memorable brand name for your business. Free consultation and competitive pricing for small businesses and startups.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-600 transition-all transform hover:scale-105">
+          <button onClick={() => scrollToSection('contact')} className="bg-gradient-ocean text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-deep-blue transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             Get a Quote
           </button>
-          <button onClick={() => scrollToSection('services')} className="border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg text-lg font-medium hover:bg-charcoal hover:text-white transition-all">
+          <button onClick={() => scrollToSection('services')} className="bg-gradient-sky text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-ocean-blue transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             View Services
           </button>
         </div>

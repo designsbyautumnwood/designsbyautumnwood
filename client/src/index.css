@@ -24,7 +24,7 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Custom Autumnwood Colors */
+  /* Custom Autumnwood Colors - Vibrant Autumn Palette */
   --charcoal: hsl(0, 0%, 10%);
   --warm-blue: hsl(200, 70%, 65%);
   --off-white: hsl(0, 0%, 98%);
@@ -32,6 +32,18 @@
   --blue-100: hsl(200, 70%, 94%);
   --blue-300: hsl(200, 70%, 75%);
   --blue-600: hsl(200, 70%, 55%);
+  
+  /* Vibrant Blue Color Palette */
+  --sky-blue: hsl(200, 100%, 70%);
+  --ocean-blue: hsl(210, 100%, 60%);
+  --deep-blue: hsl(220, 90%, 50%);
+  --navy-blue: hsl(230, 80%, 35%);
+  --teal-blue: hsl(180, 70%, 50%);
+  --powder-blue: hsl(190, 60%, 80%);
+  --royal-blue: hsl(240, 100%, 65%);
+  --cyan-blue: hsl(195, 100%, 60%);
+  --steel-blue: hsl(207, 44%, 49%);
+  --ice-blue: hsl(200, 100%, 90%);
 }
 
 .dark {
@@ -127,6 +139,129 @@
   
   .bg-blue-300 {
     background-color: var(--blue-300);
+  }
+  
+  /* Vibrant Blue Color Utilities */
+  .text-sky-blue {
+    color: var(--sky-blue);
+  }
+  
+  .text-ocean-blue {
+    color: var(--ocean-blue);
+  }
+  
+  .text-deep-blue {
+    color: var(--deep-blue);
+  }
+  
+  .text-navy-blue {
+    color: var(--navy-blue);
+  }
+  
+  .text-teal-blue {
+    color: var(--teal-blue);
+  }
+  
+  .text-powder-blue {
+    color: var(--powder-blue);
+  }
+  
+  .text-royal-blue {
+    color: var(--royal-blue);
+  }
+  
+  .text-cyan-blue {
+    color: var(--cyan-blue);
+  }
+  
+  .text-steel-blue {
+    color: var(--steel-blue);
+  }
+  
+  .text-ice-blue {
+    color: var(--ice-blue);
+  }
+  
+  .bg-sky-blue {
+    background-color: var(--sky-blue);
+  }
+  
+  .bg-ocean-blue {
+    background-color: var(--ocean-blue);
+  }
+  
+  .bg-deep-blue {
+    background-color: var(--deep-blue);
+  }
+  
+  .bg-navy-blue {
+    background-color: var(--navy-blue);
+  }
+  
+  .bg-teal-blue {
+    background-color: var(--teal-blue);
+  }
+  
+  .bg-powder-blue {
+    background-color: var(--powder-blue);
+  }
+  
+  .bg-royal-blue {
+    background-color: var(--royal-blue);
+  }
+  
+  .bg-cyan-blue {
+    background-color: var(--cyan-blue);
+  }
+  
+  .bg-steel-blue {
+    background-color: var(--steel-blue);
+  }
+  
+  .bg-ice-blue {
+    background-color: var(--ice-blue);
+  }
+  
+  /* Blue Gradient Backgrounds */
+  .bg-gradient-ocean {
+    background: linear-gradient(135deg, var(--sky-blue), var(--ocean-blue), var(--deep-blue));
+  }
+  
+  .bg-gradient-sky {
+    background: linear-gradient(135deg, var(--powder-blue), var(--sky-blue), var(--cyan-blue));
+  }
+  
+  .bg-gradient-deep {
+    background: linear-gradient(135deg, var(--teal-blue), var(--ocean-blue), var(--royal-blue));
+  }
+  
+  .bg-gradient-cool {
+    background: linear-gradient(135deg, var(--ice-blue), var(--powder-blue), var(--sky-blue));
+  }
+  
+  /* Blue Hover Effects */
+  .hover\:bg-sky-blue:hover {
+    background-color: var(--sky-blue);
+  }
+  
+  .hover\:bg-ocean-blue:hover {
+    background-color: var(--ocean-blue);
+  }
+  
+  .hover\:bg-deep-blue:hover {
+    background-color: var(--deep-blue);
+  }
+  
+  .hover\:text-sky-blue:hover {
+    color: var(--sky-blue);
+  }
+  
+  .hover\:text-ocean-blue:hover {
+    color: var(--ocean-blue);
+  }
+  
+  .hover\:text-deep-blue:hover {
+    color: var(--deep-blue);
   }
 }
 

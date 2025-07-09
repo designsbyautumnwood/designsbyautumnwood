@@ -17,11 +17,11 @@ export default function Navigation() {
             <img src="/logo-symbol.png" alt="Autumnwood Designs" className="h-12 w-auto" />
           </div>
           <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-warm-blue transition-colors">About</button>
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-warm-blue transition-colors">Services</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-warm-blue transition-colors">Contact</button>
+            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-ocean-blue transition-colors font-medium">About</button>
+            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-deep-blue transition-colors font-medium">Services</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-teal-blue transition-colors font-medium">Contact</button>
           </div>
-          <button onClick={() => scrollToSection('contact')} className="bg-warm-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+          <button onClick={() => scrollToSection('contact')} className="bg-gradient-ocean text-white px-4 py-2 rounded-lg hover:bg-deep-blue transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
             Get Quote
           </button>
         </div>
