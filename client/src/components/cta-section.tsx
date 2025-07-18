@@ -65,30 +65,30 @@ export default function CTASection() {
           </div>
           
           <div className="text-center">
-            <div className="bg-gradient-to-r from-ocean-blue to-deep-blue text-white p-8 rounded-2xl shadow-lg">
-              <div className="text-6xl font-bold mb-4 text-yellow-300">
+            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-orange-300 p-8 rounded-2xl shadow-lg">
+              <div className="text-6xl font-bold mb-4 text-orange-600">
                 30%
               </div>
-              <div className="text-2xl font-bold mb-2 text-white">OFF</div>
-              <div className="text-lg text-blue-100 mb-6">
+              <div className="text-2xl font-bold mb-2 text-orange-700">OFF</div>
+              <div className="text-lg text-gray-700 mb-6">
                 Limited Time Offer<br/>
                 First 5 Website Customers Only
               </div>
               
               <div className="flex items-center justify-center space-x-2 mb-6">
-                <Clock className="w-5 h-5 text-yellow-300" />
-                <span className="text-yellow-300 font-medium">Don't miss out - Act now!</span>
+                <Clock className="w-5 h-5 text-red-500" />
+                <span className="text-red-600 font-medium">Don't miss out - Act now!</span>
               </div>
               
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 mx-auto"
+                className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg text-lg font-bold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 mx-auto"
               >
                 <span>Claim Your 30% Discount</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
               
-              <p className="text-xs text-blue-100 mt-4">
+              <p className="text-xs text-gray-600 mt-4">
                 No commitment required. Free consultation included.
               </p>
             </div>
