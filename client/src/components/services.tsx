@@ -55,7 +55,7 @@ export default function Services() {
             Website Design, Logo & Brand Naming <span className="font-semibold text-ocean-blue">Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Professional web design services, custom logo creation, and strategic brand naming for small businesses and startups. Get a free quote today.
+            Professional web design services with advanced SEO optimization, custom logo creation, and strategic brand naming for small businesses and startups. Every website includes comprehensive SEO setup to help you rank higher on Google and attract more customers.
           </p>
         </div>
         

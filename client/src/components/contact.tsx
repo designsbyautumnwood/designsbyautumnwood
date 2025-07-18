@@ -69,7 +69,7 @@ export default function Contact() {
             Order Services <span className="font-semibold text-deep-blue">Here</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ready to bring your vision to life? Get in touch with us and let's discuss how we can help you create something amazing.
+            Ready to grow your business online? Get a custom website with advanced SEO optimization, professional logo, and memorable brand name. Free consultation included with every project.
           </p>
         </div>
         

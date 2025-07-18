@@ -3,7 +3,9 @@ import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Services from "@/components/services";
-
+import Testimonials from "@/components/testimonials";
+import FAQ from "@/components/faq";
+import CTASection from "@/components/cta-section";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -57,6 +59,9 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Testimonials />
+      <FAQ />
+      <CTASection />
       <Contact />
       <Footer />
     </div>

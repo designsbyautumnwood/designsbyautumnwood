@@ -10,7 +10,7 @@ export default function Footer() {
               <img src="/logo-full.png" alt="Autumnwood Designs" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-300 mb-4">
-              Autumnwood Designs - Creating beautiful brands and digital experiences for businesses of all sizes.
+              Professional website design, logo creation, and brand naming services with advanced SEO optimization for small businesses and startups.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-sky-blue transition-colors transform hover:scale-110">
@@ -31,7 +31,8 @@ export default function Footer() {
               <li><a href="#services" className="hover:text-ocean-blue transition-colors">Website Design</a></li>
               <li><a href="#services" className="hover:text-deep-blue transition-colors">Logo Creation</a></li>
               <li><a href="#services" className="hover:text-teal-blue transition-colors">Brand Naming</a></li>
-              <li><a href="#services" className="hover:text-cyan-blue transition-colors">Brand Strategy</a></li>
+              <li><a href="#services" className="hover:text-cyan-blue transition-colors">SEO Optimization</a></li>
+              <li><a href="#services" className="hover:text-royal-blue transition-colors">Website Maintenance</a></li>
             </ul>
           </div>
           

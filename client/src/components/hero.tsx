@@ -34,11 +34,25 @@ export default function Hero() {
           </button>
         </div>
         <h1 className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Professional Website Design, Logo Creation & Brand Naming Services
+          Professional Website Design, Logo Creation & Brand Naming Services with Advanced SEO Optimization
         </h1>
-        <p className="text-lg text-gray-500 mb-12 max-w-xl mx-auto">
-          Get a custom website design, professional logo, and memorable brand name for your business. Free consultation and competitive pricing for small businesses and startups.
+        <p className="text-lg text-gray-500 mb-6 max-w-xl mx-auto">
+          Get a custom website design, professional logo, and memorable brand name for your business. All websites include advanced SEO optimization to help you rank higher on Google and attract more customers.
         </p>
+        <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
+          <div className="flex items-center justify-center space-x-2 mb-2">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-green-700 font-semibold">Why Choose Autumnwood Designs?</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-green-700">
+            <div>✓ Advanced SEO Optimization</div>
+            <div>✓ Mobile-First Design</div>
+            <div>✓ Fast Loading Speed</div>
+            <div>✓ Google Analytics Setup</div>
+            <div>✓ Professional Email Setup</div>
+            <div>✓ 24/7 Support</div>
+          </div>
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={() => scrollToSection('contact')} className="bg-gradient-ocean text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-deep-blue transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             Get a Quote

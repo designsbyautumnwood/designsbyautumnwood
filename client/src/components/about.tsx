@@ -8,10 +8,10 @@ export default function About() {
               Professional Web Design & Brand Identity Services
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Autumnwood Designs is a professional freelance web design studio offering custom website design, logo creation, and brand naming services for small businesses and startups across the United States.
+              Autumnwood Designs is a professional freelance web design studio specializing in custom website design, logo creation, and brand naming services for small businesses and startups across the United States. We focus on creating digital solutions that drive real business results.
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We specialize in creating responsive, SEO-optimized websites, memorable logo designs, and strategic brand naming that helps your business stand out online and attract more customers.
+              Our websites include advanced SEO optimization, mobile-first responsive design, and performance optimization to help you rank higher on Google, attract more customers, and grow your business online. Every project includes comprehensive on-page SEO setup and Google Analytics integration.
             </p>
             <div className="bg-gradient-to-r from-ocean-blue/10 to-deep-blue/10 border-l-4 border-ocean-blue p-6 rounded-lg mb-8">
               <div className="flex items-center mb-3">
@@ -24,9 +24,10 @@ export default function About() {
               <ul className="text-gray-600 space-y-1 text-sm">
                 <li>• Modern React-based architecture with TypeScript</li>
                 <li>• Responsive design that works on all devices</li>
-                <li>• Interactive pricing calculator with promotional campaigns</li>
+                <li>• Advanced SEO optimization with structured data</li>
                 <li>• Working contact form with email integration</li>
-                <li>• SEO-optimized structure for better search rankings</li>
+                <li>• Fast loading speeds and performance optimization</li>
+                <li>• Mobile-first design approach for better rankings</li>
               </ul>
             </div>
             <div className="flex flex-col sm:flex-row gap-8">
