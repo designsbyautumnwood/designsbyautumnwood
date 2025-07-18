@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
         <div className="mb-6 mx-auto max-w-lg">
           <button 
-            onClick={() => scrollToSection('calculator')}
+            onClick={() => scrollToSection('contact')}
             className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-full text-center font-bold text-lg animate-pulse shadow-lg hover:from-red-600 hover:to-orange-600 transition-all transform hover:scale-105 cursor-pointer w-full"
           >
             🎉 LIMITED TIME: First 5 Websites Get Up To 30% OFF! 🎉

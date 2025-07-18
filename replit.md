@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for Autumnwood Designs, a freelance creative studio specializing in website design, logo creation, and brand naming. The application features a modern, responsive design with a contact form system that handles quote requests and sends email notifications.
+This is a full-stack web application for Autumnwood Designs, a freelance creative studio specializing in website design, logo creation, and brand naming. The application features a modern, responsive design with a contact form system that handles order requests and sends email notifications.
 
 ## User Preferences
 
@@ -38,6 +38,7 @@ SEO is the highest priority - marketing focused website that needs to rank well 
 - Custom components for Hero, About, Services, Portfolio, Contact, and Footer sections
 - Responsive design with mobile-first approach
 - Animation and reveal effects for enhanced user experience
+- Streamlined order flow directing users from hero to contact form
 
 ### API Endpoints
 - **POST /api/contact**: Handles contact form submissions, stores data, and sends email notifications
@@ -49,7 +50,7 @@ SEO is the highest priority - marketing focused website that needs to rank well 
 
 ## Data Flow
 
-1. **User Interaction**: Users fill out the contact form with service requirements
+1. **User Interaction**: Users navigate from hero section directly to contact form with service requirements
 2. **Form Validation**: Client-side validation using Zod schemas
 3. **API Request**: Form data sent to backend via React Query mutation
 4. **Data Storage**: Contact submission stored in PostgreSQL database
