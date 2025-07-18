@@ -18,7 +18,7 @@ export default function Services() {
       description: "Custom, responsive websites built to impress and convert. We create modern, user-friendly designs that work seamlessly across all devices.",
       features: [
         "Responsive Mobile Design",
-        "SEO Optimization",
+        "Advanced SEO Optimization",
         "Performance Optimization",
         "Content Management"
       ]
