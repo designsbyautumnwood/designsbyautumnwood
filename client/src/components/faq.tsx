@@ -91,14 +91,14 @@ export default function FAQ() {
         </div>
         
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-ocean-blue to-deep-blue text-white p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-white">Ready to Get Started?</h3>
-            <p className="text-gray-100 mb-6">
+          <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-ocean-blue p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4 text-ocean-blue">Ready to Get Started?</h3>
+            <p className="text-gray-700 mb-6">
               Still have questions? Get a free consultation and personalized quote for your project.
             </p>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-white text-ocean-blue px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+              className="bg-ocean-blue text-white px-8 py-3 rounded-lg font-medium hover:bg-deep-blue transition-colors"
             >
               Get Free Consultation
             </button>
