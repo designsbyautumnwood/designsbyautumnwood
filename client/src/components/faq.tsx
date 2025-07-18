@@ -92,8 +92,8 @@ export default function FAQ() {
         
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-ocean-blue to-deep-blue text-white p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
-            <p className="text-blue-100 mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-300">Ready to Get Started?</h3>
+            <p className="text-white mb-6">
               Still have questions? Get a free consultation and personalized quote for your project.
             </p>
             <button 
